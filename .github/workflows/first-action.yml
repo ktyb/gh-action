@@ -4,11 +4,10 @@ jobs:
   first-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Print hello
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: Print pwd
         run: |
-          echo "Hello!"
-          echo "WORLD"
-      
-      - name: Print gb
-        run: echo "GB!"
-      
+          pwd
+          ls
