@@ -5,7 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print hello
-        run: echo "Hello!"
+        run: |
+          echo "Hello!"
+          echo "WORLD"
       
       - name: Print gb
         run: echo "GB!"
